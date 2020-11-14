@@ -1,10 +1,135 @@
-\documentclass[8pt, a4paper]{article}
+\documentclass[10pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
+\usepackage{array}
+\usepackage[italian]{babel}
+\usepackage{hyperref}
 
 \title{Il formulario bellino}
 \author{Lorenzo Cauli}
 
 \begin{document}
     \maketitle
-\end{document}
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \part{Derivate}
+    \section{Funzioni Razionali}
+    \begin{center}
+        \noindent\makebox[\textwidth]{
+            \label{tab:derivate:razionali}
+            \begin{tabular}{ |p{5em}|p{5em}|p{5em}|p{7em}|p{5cm}| }
+                \hline
+                Nome & Formula & Derivata & Esempio & Nota \\
+                
+                \hline
+                
+                % funzioni costanti
+                \begin{center}
+                    Costante
+                \end{center} &
+                \begin{align}
+                    y=n \nonumber
+                \end{align}  &
+                \begin{align}
+                    y'=0 \nonumber
+                \end{align} &
+                {
+                    \begin{align}
+                        y &= 4   \nonumber \\
+                        y' & = 0 \nonumber 
+                    \end{align}
+                } &
+                \begin{center}
+                    La derivata di qualsiasi funzione costante equivale a 0 
+                \end{center} \\ 
+
+                \hline
+                
+                % razionali intere
+                \begin{center}
+                    Intera
+                \end{center} &
+                \begin{align}
+                    y=x^n \nonumber
+                \end{align} &
+                \begin{align}
+                    y'=nx^{n-1} \nonumber
+                \end{align} &
+                {
+                    \begin{align}
+                        y  & = 5x^2        \nonumber \\
+                        y' & =(2*5)x^{2-1} \nonumber \\
+                           & =10x          \nonumber
+                    \end{align}
+                } &  \\
+
+                \hline
+                
+                % razionali frazionarie
+                \begin{center}
+                    Frazionaria
+                \end{center} &
+                \begin{align}
+                    y = \frac{n}{x} \nonumber
+                \end{align} &
+                \begin{align}
+                    y'=nx^{n-1} \nonumber
+                \end{align} &
+                \begin{center}
+                    ---
+                \end{center} &
+                \begin{center}
+                    Vedere sezione \nameref{eq:derivate:divisione} a pagina \pageref{eq:derivate:divisione} \\
+                \end{center}  \\
+                \hline
+            \end{tabular}
+        }
+    \end{center}
+    \section{Funzioni Irrazionali}
+    \begin{center}
+        \noindent\makebox[\textwidth]{
+            \label{tab:derivate:razionali}
+            \begin{tabular}{ |p{5em}|p{5em}|p{5em}|p{7em}|p{5cm}| }
+                \hline
+                Nome & Formula & Derivata & Esempio & Nota \\
+                
+                \hline
+                
+                % funzioni costanti
+                \begin{center}
+                    Radice quadrata
+                \end{center} &
+                \begin{align}
+                    y=\sqrt{x} \nonumber
+                \end{align}  &
+                \begin{align}
+                    y'=\frac{1}{ 2\sqrt{x} } \nonumber
+                \end{align} &
+                {
+                    \begin{align}
+                        y  &= \sqrt{x^4}   \nonumber \\
+                           &= x^\frac{4}{2}  \nonumber \\
+                        y' &= \frac{1}{ 2\sqrt{4} } \nonumber
+                    \end{align}
+                } &
+                \begin{center}
+                    La derivata di qualsiasi funzione costante equivale a 0 
+                \end{center} \\ 
+
+                \hline
+                
+            \end{tabular}
+        }
+    \end{center}
+    \section{Funzioni Esponenziali}
+    \section{Funzioni Logaritmiche}
+    \section{Funzioni Goniometriche}
+
+    \newpage
+    \part{Integrali}
+    \section{AAAA}
+    \huge{WIP}
+
+\end{document} 
