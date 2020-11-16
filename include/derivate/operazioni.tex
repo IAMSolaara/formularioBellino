@@ -1,0 +1,125 @@
+\section{Operazioni tra funzioni}
+\begin{center}
+    \noindent\makebox[\textwidth]{
+        \label{tab:derivate:operazioni}
+        \begin{tabular}{ |p{5em} | p{5em} | p{5em} | p{7em} | p{2cm}| }
+            \hline
+            Nome & Formula & Derivata & Esempio & Nota \\
+            
+            \hline
+            
+            % somma funzioni
+            \begin{center}
+                Somma
+            \end{center} &
+            \begin{align}
+                y= {\color{red}f(x)} + {\color{blue}g(x)} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= {\color{red}f'(x)} + {\color{blue}g'(x)} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y  &= {\color{red}x^2} + {\color{blue}4}   \nonumber \\
+                    y' &= {\color{red}2x^{2-1}} + {\color{blue}0} \nonumber \\
+                        &= 2x \nonumber 
+                \end{align}
+            } &
+            \begin{center}
+            \end{center} \\ 
+
+            \hline
+            
+            % differenza funzioni
+            \begin{center}
+                Differenza
+            \end{center} &
+            \begin{align}
+                y= {\color{red}f(x)} - {\color{blue}g(x)} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= {\color{red}f'(x)} - {\color{blue}g'(x)} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y  &= {\color{red}x^2} - {\color{blue}4}   \nonumber \\
+                    y' &= {\color{red}2x^{2-1}} - {\color{blue}0} \nonumber \\
+                        &= 2x \nonumber 
+                \end{align}
+            } &
+            \begin{center}
+            \end{center} \\ 
+
+            \hline
+            
+            % prodotto funzioni
+            \begin{center}
+                Prodotto
+            \end{center} &
+            \begin{align}
+                y= {\color{red}f(x)} * {\color{blue}g(x)} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= ({\color{red}f'(x)} * {\color{blue}g(x)} ) + ( {\color{red}f(x)} * {\color{blue}g'(x)}) \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y  &= {\color{red}x^2} * {\color{blue}4}   \nonumber \\
+                    y' &= ( {\color{red}2x^{2-1}} * {\color{blue}4} ) + ( {\color{red}x^2} * {\color{blue}0} ) \nonumber \\
+                        &= (2x * 4) + 0 \nonumber \\
+                        &= 8x \nonumber 
+                \end{align}
+            } &
+            \begin{center}
+            \end{center} \\ 
+
+            \hline
+            
+            % rapporto funzioni
+            \begin{center}
+                Rapporto
+            \end{center} &
+            \begin{align}
+                y= \frac{\color{red}f(x)}{\color{blue}g(x)} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= \frac{[{\color{red}f'(x)} * {\color{blue}g(x)} ] - [ {\color{red}f(x)} * {\color{blue}g'(x)}]}{[{\color{blue}g'(x)}]^2} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y  &= \frac{\color{red}x^2}{\color{blue}4}   \nonumber \\
+                    y' &= \frac{( {\color{red}2x^{2-1}} * {\color{blue}4} ) - ( {\color{red}x^2} * {\color{blue}0} )}{{\color{blue}4}^2} \nonumber \\
+                        &= \frac{({\color{red}2x} * {\color{blue}4}) - 0}{16} \nonumber \\
+                        &= \frac{\cancel{8}^1x}{\cancel{16}_2} \nonumber  \\
+                        &= \frac{x}{2} \nonumber
+                \end{align}
+            } &
+            \begin{center}
+            \end{center} \\ 
+
+            \hline
+            
+            % funzioni composte
+            \begin{center}
+                Funzioni composte
+            \end{center} &
+            \begin{align}
+                y= {\color{red}f({\color{blue}g(x)})} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= {\color{red}f'({\color{blue}g(x)})} * {\color{blue}g'(x)} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y  &= {\color{red}sin({\color{blue}2x^2})}   \nonumber \\
+                    y' &= {\color{red}cos({\color{blue}2x^2})} * {\color{blue}4x} \nonumber 
+                \end{align}
+            } &
+            \begin{center}
+            \end{center} \\ 
+
+            \hline
+            
+        \end{tabular}
+    }
+\end{center}
