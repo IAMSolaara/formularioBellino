@@ -2,4 +2,4 @@
 
 Sorgente in `main.tex`
 
-Output generabile facendo `make`
+Output generabile facendo `latexmk -pdf`
