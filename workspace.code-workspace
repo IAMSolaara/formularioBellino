@@ -4,5 +4,12 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/*.aux": true,
+			"main.fls": true,
+			"main.fdb_latexmk": true,
+			"main.synctex.gz": true,
+		},
+	}
 }

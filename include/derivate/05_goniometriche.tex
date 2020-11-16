@@ -1,8 +1,10 @@
+\documentclass[../../main]{subfiles}
+\begin{document}
 \subsection{Funzioni Goniometriche}
 \begin{center}
     \noindent\makebox[\textwidth]{
         \label{tab:derivate:goniometriche}
-        \begin{tabular}{ |p{5em}|p{5em}|p{5em}|p{7em}|p{5cm}| }
+        \begin{tabular}{ |p{7em}|p{5em}|p{5em}|p{7em}|p{5cm}| }
             \hline
             Nome & Formula & Derivata & Esempio & Nota \\
             
@@ -20,11 +22,55 @@
             \end{align} &
             {
                 \begin{align}
-                    y  &= \sqrt{x^4}   \nonumber \\
-                        &= x^\frac{4}{2}  \nonumber \\
-                    y' &= \frac{\cancel{4}^2}{\cancel{2}_1}x^{\frac{\cancel{4}^2}{\cancel{2}_1}-1} \nonumber \\
-                        &= 2x^{2-1} \nonumber \\
-                        &= 2x \nonumber 
+                    y &= 4\sin{x} \nonumber \\
+                    y' &= 4\cos{x} \nonumber
+                \end{align}
+            } &
+            {
+            \begin{center}
+            \end{center}
+            } \\
+
+            \hline
+
+            % funzioni costanti
+            \begin{center}
+                Coseno
+            \end{center} &
+            \begin{align}
+                y=\cos{x} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'=-\sin{x} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y &= 4\cos{x} \nonumber \\
+                    y' &= -4\sin{x} \nonumber
+                \end{align}
+            } &
+            {
+            \begin{center}
+            \end{center}
+            } \\
+
+            \hline
+
+            % funzioni costanti
+            \begin{center}
+                Tangente
+            \end{center} &
+            \begin{align}
+                y=\tan{x} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'=\frac{1}{\cos^2{x}} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    y  & = 4 \tan{x} \nonumber \\
+                    y' & = 4 \frac{1}{\cos^2{x}} \nonumber \\
+                       & = \frac{4}{\cos^2{x}} \nonumber
                 \end{align}
             } &
             {
@@ -34,6 +80,103 @@
 
             \hline
             
+            % funzioni costanti
+            \begin{center}
+                ArcoSeno
+            \end{center} &
+            \begin{align}
+                y=\arcsin{x} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= \frac{1}{\sqrt{1-x^2}} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                    a
+                \end{align}
+            } &
+            {
+            \begin{center}
+            \end{center}
+            } \\
+
+            \hline
+
+            % funzioni costanti
+            \begin{center}
+                ArcoCoseno
+            \end{center} &
+            \begin{align}
+                y=\arccos{x} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= -\frac{1}{\sqrt{1-x^2}} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                a
+                \end{align}
+            } &
+            {
+            \begin{center}
+            \end{center}
+            } \\
+
+            \hline
+            
+            % funzioni costanti
+            \begin{center}
+                ArcoTangente
+            \end{center} &
+            \begin{align}
+                y=\arctan{x} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= \frac{1}{1+x^2} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                   y &= \frac{1}{2}\arctan{x} \nonumber \\
+                   y' &= \frac{1}{2} \frac{1}{1+x^2} \nonumber \\
+                      &= \frac{1}{2(1+x^2)} \nonumber \\
+                      &= \frac{1}{2+2x^2} \nonumber
+                \end{align}
+            } &
+            {
+            \begin{center}
+            \end{center}
+            } \\
+
+            \hline
+
+            % funzioni costanti
+            \begin{center}
+                ArcoCotangente
+            \end{center} &
+            \begin{align}
+                y=\arccot{x} \nonumber
+            \end{align}  &
+            \begin{align}
+                y'= -\frac{1}{1+x^2} \nonumber
+            \end{align} &
+            {
+                \begin{align}
+                   y &= \frac{1}{2}\arccot{x} \nonumber \\
+                   y' &= -\frac{1}{2} \frac{1}{1+x^2} \nonumber \\
+                      &= -\frac{1}{2(1+x^2)} \nonumber \\
+                      &= -\frac{1}{2+2x^2} \nonumber
+                \end{align}
+            } &
+            {
+            \begin{center}
+            \end{center}
+            } \\
+
+            \hline
+            
+            
         \end{tabular}
     }
 \end{center}
+    
+\end{document}

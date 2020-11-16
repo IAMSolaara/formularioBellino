@@ -1,4 +1,4 @@
-\documentclass[10pt, a4paper]{article}
+\documentclass[10pt,oneside, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{array}
@@ -7,9 +7,12 @@
 \usepackage{cancel}
 \usepackage{xcolor}
 \usepackage[pdftex]{graphicx}
-\usepackage{caption}
+%\usepackage{caption}
 \usepackage{titling}
-\usepackage{comment}
+%\usepackage{comment}
+\usepackage{tabularx}
+\usepackage[top=2cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\usepackage{subfiles}
 
 \title{Il formulario bellino}
 \author{Lorenzo Cauli}
@@ -18,21 +21,22 @@
 \setlength{\droptitle}{-10em}
 \graphicspath{./images/}
 
+\include{./include/mathOperators}
 
 \begin{document}
     \maketitle
-    \hspace{-35pt}\includegraphics[width=400pt]{images/scano.png}
+    {\centering \includegraphics[width=400pt]{images/scano.png} \par}
     \newpage
     \tableofcontents
 
     \newpage
     \section{Derivate}
-    \include{include/derivate/01_razionali}
-    \include{include/derivate/02_irrazionali}
-    \include{include/derivate/03_esponenziali}
-    \include{include/derivate/04_logaritmiche}
-    \include{include/derivate/05_goniometriche}
-    \include{include/derivate/06_operazioni}
+    \subfileinclude{include/derivate/01_razionali}
+    \subfileinclude{include/derivate/02_irrazionali}
+    \subfileinclude{include/derivate/03_esponenziali}
+    \subfileinclude{include/derivate/04_logaritmiche}
+    \subfileinclude{include/derivate/05_goniometriche}
+    \subfileinclude{include/derivate/06_operazioni}
 
     \newpage
     \section{Integrali}
