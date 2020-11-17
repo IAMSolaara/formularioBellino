@@ -9,6 +9,8 @@
 			"**/*.aux": true,
 			"main.fls": true,
 			"main.fdb_latexmk": true,
+			"include/**/*.fls": true,
+			"include/**/*.fdb_latexmk": true,
 			"main.synctex.gz": true,
 		},
 	}
