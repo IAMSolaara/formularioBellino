@@ -2,10 +2,9 @@
 \begin{document}
 \subsection{Operazioni tra funzioni}
 \begin{center}
-    \noindent\makebox[\textwidth]{
         \label{tab:derivate:operazioni}
-        \begin{tabular}{ |p{5em} | p{5em} | p{5em} | p{7em} | p{2cm}| }
-            \hline
+        \begin{longtable}{ |p{5em} | p{5em} | p{5em} | p{7em} | p{2cm}| }
+            \hhline{|=|=|=|=|=|}
             Nome & Formula & Derivata & Esempio & Nota \\
             
             \hline
@@ -14,18 +13,18 @@
             \begin{center}
                 Somma
             \end{center} &
-            \begin{align}
-                y= {\color{red}f(x)} + {\color{blue}g(x)} \nonumber
-            \end{align}  &
-            \begin{align}
-                y'= {\color{red}f'(x)} + {\color{blue}g'(x)} \nonumber
-            \end{align} &
+            \begin{align*}
+                y= {\color{red}f(x)} + {\color{blue}g(x)} 
+            \end{align*}  &
+            \begin{align*}
+                y'= {\color{red}f'(x)} + {\color{blue}g'(x)} 
+            \end{align*} &
             {
-                \begin{align}
-                    y  &= {\color{red}x^2} + {\color{blue}4}   \nonumber \\
-                    y' &= {\color{red}2x^{2-1}} + {\color{blue}0} \nonumber \\
-                        &= 2x \nonumber 
-                \end{align}
+                \begin{align*}
+                    y  &= {\color{red}x^2} + {\color{blue}4}    \\
+                    y' &= {\color{red}2x^{2-1}} + {\color{blue}0}  \\
+                        &= 2x  
+                \end{align*}
             } &
             \begin{center}
             \end{center} \\ 
@@ -36,18 +35,18 @@
             \begin{center}
                 Differenza
             \end{center} &
-            \begin{align}
-                y= {\color{red}f(x)} - {\color{blue}g(x)} \nonumber
-            \end{align}  &
-            \begin{align}
-                y'= {\color{red}f'(x)} - {\color{blue}g'(x)} \nonumber
-            \end{align} &
+            \begin{align*}
+                y= {\color{red}f(x)} - {\color{blue}g(x)} 
+            \end{align*}  &
+            \begin{align*}
+                y'= {\color{red}f'(x)} - {\color{blue}g'(x)} 
+            \end{align*} &
             {
-                \begin{align}
-                    y  &= {\color{red}x^2} - {\color{blue}4}   \nonumber \\
-                    y' &= {\color{red}2x^{2-1}} - {\color{blue}0} \nonumber \\
-                        &= 2x \nonumber 
-                \end{align}
+                \begin{align*}
+                    y  &= {\color{red}x^2} - {\color{blue}4}    \\
+                    y' &= {\color{red}2x^{2-1}} - {\color{blue}0}  \\
+                        &= 2x  
+                \end{align*}
             } &
             \begin{center}
             \end{center} \\ 
@@ -58,19 +57,19 @@
             \begin{center}
                 Prodotto
             \end{center} &
-            \begin{align}
-                y= {\color{red}f(x)} * {\color{blue}g(x)} \nonumber
-            \end{align}  &
-            \begin{align}
-                y'= ({\color{red}f'(x)} * {\color{blue}g(x)} ) + ( {\color{red}f(x)} * {\color{blue}g'(x)}) \nonumber
-            \end{align} &
+            \begin{align*}
+                y= {\color{red}f(x)} * {\color{blue}g(x)} 
+            \end{align*}  &
+            \begin{align*}
+                y'= ({\color{red}f'(x)} * {\color{blue}g(x)} ) + ( {\color{red}f(x)} * {\color{blue}g'(x)}) 
+            \end{align*} &
             {
-                \begin{align}
-                    y  &= {\color{red}x^2} * {\color{blue}4}   \nonumber \\
-                    y' &= ( {\color{red}2x^{2-1}} * {\color{blue}4} ) + ( {\color{red}x^2} * {\color{blue}0} ) \nonumber \\
-                        &= (2x * 4) + 0 \nonumber \\
-                        &= 8x \nonumber 
-                \end{align}
+                \begin{align*}
+                    y  &= {\color{red}x^2} * {\color{blue}4}    \\
+                    y' &= ( {\color{red}2x^{2-1}} * {\color{blue}4} ) + ( {\color{red}x^2} * {\color{blue}0} )  \\
+                        &= (2x * 4) + 0  \\
+                        &= 8x  
+                \end{align*}
             } &
             \begin{center}
             \end{center} \\ 
@@ -81,20 +80,20 @@
             \begin{center}
                 Rapporto
             \end{center} &
-            \begin{align}
-                y= \frac{\color{red}f(x)}{\color{blue}g(x)} \nonumber
-            \end{align}  &
-            \begin{align}
-                y'= \frac{[{\color{red}f'(x)} * {\color{blue}g(x)} ] - [ {\color{red}f(x)} * {\color{blue}g'(x)}]}{[{\color{blue}g'(x)}]^2} \nonumber
-            \end{align} &
+            \begin{align*}
+                y= \frac{\color{red}f(x)}{\color{blue}g(x)} 
+            \end{align*}  &
+            \begin{align*}
+                y'= \frac{[{\color{red}f'(x)} * {\color{blue}g(x)} ] - [ {\color{red}f(x)} * {\color{blue}g'(x)}]}{[{\color{blue}g'(x)}]^2} 
+            \end{align*} &
             {
-                \begin{align}
-                    y  &= \frac{\color{red}x^2}{\color{blue}4}   \nonumber \\
-                    y' &= \frac{( {\color{red}2x^{2-1}} * {\color{blue}4} ) - ( {\color{red}x^2} * {\color{blue}0} )}{{\color{blue}4}^2} \nonumber \\
-                        &= \frac{({\color{red}2x} * {\color{blue}4}) - 0}{16} \nonumber \\
-                        &= \frac{\cancel{8}^1x}{\cancel{16}_2} \nonumber  \\
-                        &= \frac{x}{2} \nonumber
-                \end{align}
+                \begin{align*}
+                    y  &= \frac{\color{red}x^2}{\color{blue}4}    \\
+                    y' &= \frac{( {\color{red}2x^{2-1}} * {\color{blue}4} ) - ( {\color{red}x^2} * {\color{blue}0} )}{{\color{blue}4}^2}  \\
+                        &= \frac{({\color{red}2x} * {\color{blue}4}) - 0}{16}  \\
+                        &= \frac{\cancel{8}^1x}{\cancel{16}_2}   \\
+                        &= \frac{x}{2} 
+                \end{align*}
             } &
             \begin{center}
             \end{center} \\ 
@@ -105,25 +104,24 @@
             \begin{center}
                 Funzioni composte
             \end{center} &
-            \begin{align}
-                y= {\color{red}f({\color{blue}g(x)})} \nonumber
-            \end{align}  &
-            \begin{align}
-                y'= {\color{red}f'({\color{blue}g(x)})} * {\color{blue}g'(x)} \nonumber
-            \end{align} &
+            \begin{align*}
+                y= {\color{red}f({\color{blue}g(x)})} 
+            \end{align*}  &
+            \begin{align*}
+                y'= {\color{red}f'({\color{blue}g(x)})} * {\color{blue}g'(x)} 
+            \end{align*} &
             {
-                \begin{align}
-                    y  &= {\color{red}sin({\color{blue}2x^2})}   \nonumber \\
-                    y' &= {\color{red}cos({\color{blue}2x^2})} * {\color{blue}4x} \nonumber 
-                \end{align}
+                \begin{align*}
+                    y  &= {\color{red}sin({\color{blue}2x^2})}    \\
+                    y' &= {\color{red}cos({\color{blue}2x^2})} * {\color{blue}4x}  
+                \end{align*}
             } &
             \begin{center}
             \end{center} \\ 
 
-            \hline
+            \hhline{|=|=|=|=|=|}
             
-        \end{tabular}
-    }
+        \end{longtable}
 \end{center}
 
 \end{document}
